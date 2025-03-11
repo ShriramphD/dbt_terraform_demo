@@ -1,14 +1,14 @@
 variable "dbt_account_id" {
   description = "Your dbt Cloud account ID"
   type        = number
-  default     = 123456  # Replace with your actual dbt Cloud account ID
+  default     = 17878  # Replace with your actual dbt Cloud account ID
 }
 
 variable "dbt_api_key" {
   description = "Your dbt Cloud API key"
   type        = string
   sensitive   = true
-  default     = "your-dbt-api-key-here"  # Replace with your actual API key
+  default     = "dbtu_lkLcTCgBLSY2thbwFYx1_wsAqWWEwHStogNFjA4UcS_fOkZWt4"  # Replace with your actual API key
 }
 
 variable "dbt_project_name" {
@@ -26,7 +26,7 @@ variable "dbt_environment_name" {
 variable "dbt_repository_url" {
   description = "GitHub repo URL for dbt project"
   type        = string
-  default     = "https://github.com/your-org/dbt-insurance-project.git"  # Replace with actual GitHub repo
+  default     = "https://github.com/ShriramphD/dbt-insurance-project.git"  # Replace with actual GitHub repo
 }
 
 variable "dbt_job_name" {
