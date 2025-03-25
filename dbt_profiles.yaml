@@ -1,0 +1,28 @@
+dbt_snowflake:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: "TQJDKBP-DE69533"  # Example: xyz-east-us-2
+      user: "SHRIRAMS"
+      password: "Umasankar@22791"
+      role: "ACCOUNTADMIN"
+      database: "ANALYTICS_DEV"  # Example: ANALYTICS_DB
+      warehouse: "COMPUTE_WH"  # Example: COMPUTE_WH
+      schema: "DBT_DEV"  # Example: DEV
+      threads: 4
+      client_session_keep_alive: False
+      query_tag: "dbt_dev"
+
+    prod:
+      type: snowflake
+      account: "TQJDKBP-DE69533"  # Example: xyz-east-us-2
+      user: "SHRIRAMS"
+      password: "Umasankar@22791"
+      role: "ACCOUNTADMIN"
+      database: "ANALYTICS_PROD"  # Example: ANALYTICS_DB
+      warehouse: "COMPUTE_WH"  # Example: COMPUTE_WH
+      schema: "DBT_PROD"  # Example: PROD
+      threads: 8
+      client_session_keep_alive: False
+      query_tag: "dbt_prod"
